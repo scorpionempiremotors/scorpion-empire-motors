@@ -1,130 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scorpion Empire Motors</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Scorpion Empire Motors LLC</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #000;
-      color: #fff;
-      line-height: 1.6;
-    }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  color: #fff;
+  line-height: 1.6;
+}
 
-    /* HERO SECTION */
-    .hero {
-      height: 100vh;
-      background:
-        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-        url("hero-bg.jpg") center center / 150% no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-    }
+/* HERO WITH HUGE BACKGROUND LOGO */
+.hero {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("logo-bg.png") center center / 140% no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
 
-    .hero h1 {
-      font-size: 2.8rem;
-      color: #d4af37;
-      margin-bottom: 15px;
-    }
+.hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
 
-    .hero p {
-      font-size: 1.1rem;
-      max-width: 700px;
-      color: #ddd;
-    }
+.hero p {
+  color: #ddd;
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
 
-    /* SECTION */
-    section {
-      padding: 80px 20px;
-      max-width: 1100px;
-      margin: auto;
-      text-align: center;
-    }
+.btn {
+  display: inline-block;
+  background: #d4af37;
+  color: #000;
+  padding: 14px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
 
-    section h2 {
-      color: #d4af37;
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
+/* SECTIONS */
+.section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+}
 
-    section p {
-      color: #ccc;
-      max-width: 800px;
-      margin: auto;
-    }
+.section h2 {
+  margin-bottom: 20px;
+  border-left: 4px solid #d4af37;
+  padding-left: 12px;
+}
 
-    /* CONTACT */
-    .contact a {
-      display: inline-block;
-      margin-top: 15px;
-      color: #d4af37;
-      text-decoration: none;
-      font-size: 1.1rem;
-    }
+.card {
+  background: #111;
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
 
-    footer {
-      background: #000;
-      text-align: center;
-      padding: 30px 20px;
-      color: #777;
-      font-size: 0.85rem;
-    }
+/* LISTS */
+ul {
+  list-style: none;
+}
 
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2.2rem;
-      }
-    }
-  </style>
+li {
+  margin-bottom: 10px;
+}
+
+/* CONTACT BUTTONS */
+.contact-btn {
+  display: block;
+  text-align: center;
+  background: #d4af37;
+  color: #000;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-decoration: none;
+}
+
+/* FORM */
+input, textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #d4af37;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px 15px;
+  color: #777;
+  font-size: 0.9rem;
+}
+</style>
 </head>
 
 <body>
 
-  <!-- HERO -->
-  <div class="hero">
-    <div>
-      <h1>Scorpion Empire Motors</h1>
-      <p>
-        Automotive solutions focused on quality vehicles,
-        transparency, and helping customers find the right car.
-      </p>
-    </div>
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Scorpion Empire Motors LLC</h1>
+    <p>Your Trusted Connection to Auto Auctions</p>
+    <a class="btn" href="#contact">Get Started</a>
   </div>
+</section>
 
-  <!-- ABOUT -->
-  <section>
-    <h2>What We Do</h2>
-    <p>
-      Scorpion Empire Motors works with buyers and sellers to source vehicles,
-      assist with the buying process, and provide straightforward automotive guidance.
-    </p>
-  </section>
+<!-- ABOUT -->
+<section class="section">
+  <h2>About Us</h2>
+  <p>
+    Scorpion Empire Motors LLC helps individuals and businesses access vehicle auctions
+    and find the right car for their needs. We provide clear guidance, transparency,
+    and a professional experience from start to finish.
+  </p>
+</section>
 
-  <!-- CONTACT -->
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Get in touch with us:</p>
+<!-- WHAT WE DO -->
+<section class="section">
+  <h2>What We Do</h2>
+  <ul>
+    <li>✔ Auction vehicle assistance</li>
+    <li>✔ Vehicle sourcing based on your needs</li>
+    <li>✔ Clear explanation of the auction process</li>
+    <li>✔ Professional buyer support</li>
+  </ul>
+</section>
 
-    <a href="tel:+14145551234">📞 (414) 555-1234</a><br>
-    <a href="https://instagram.com/scorpionempiremotors" target="_blank">
-      📸 @scorpionempiremotors
-    </a>
-  </section>
+<!-- HOW IT WORKS -->
+<section class="section">
+  <h2>How It Works</h2>
+  <div class="card">1. Tell us what vehicle you're looking for</div>
+  <div class="card">2. We check auction availability</div>
+  <div class="card">3. We explain options and process</div>
+  <div class="card">4. You decide how to move forward</div>
+</section>
 
-  <footer>
-    © 2025 Scorpion Empire Motors. All rights reserved.
-  </footer>
+<!-- WHY CHOOSE US -->
+<section class="section">
+  <h2>Why Choose Us</h2>
+  <ul>
+    <li>✔ No pressure sales</li>
+    <li>✔ Straightforward communication</li>
+    <li>✔ Client-first approach</li>
+    <li>✔ Auction market experience</li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+
+  <a class="contact-btn" href="tel:+17707011590">Call / Text: +1 (770) 701-1590</a>
+  <a class="contact-btn" href="https://instagram.com/scorpionempiremotors" target="_blank">
+    Message Us on Instagram
+  </a>
+
+  <h3 style="margin:20px 0;">Request More Information</h3>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <textarea placeholder="What kind of vehicle are you looking for?" rows="4"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+
+  <p style="font-size:0.85rem; color:#888; margin-top:10px;">
+    Submitting this form does not guarantee vehicle availability or pricing.
+  </p>
+</section>
+
+<footer>
+  © 2025 Scorpion Empire Motors LLC · Serving Wisconsin & surrounding areas
+</footer>
 
 </body>
 </html>
